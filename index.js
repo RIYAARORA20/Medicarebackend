@@ -14,7 +14,7 @@ const app = express();
 const port = process.env.PORT || 8000;
 
 const corsOptions = {
-    origin: true
+    origin: ["https://localhost:5173", "https://Medicarefrontend.onrender.com"],
 };
 
 app.get('/',(req, res)=>{
